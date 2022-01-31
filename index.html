@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlienDoubT - Web Radio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body onclick="clicou()">
+    <header>
+        <div class="logo">
+            <img src="img/headerLogoMobile.png" alt="">
+        </div>
+        <marquee class="slogan"><strong>AlienDoubT</strong> - Web Radio</marquee>
+    </header>
+    <main>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logoradio.png" alt="">
+            </div>
+            <div class="player">
+                <img src="img/equalizer.gif" alt="" class="equalizer">
+                <audio controls="" autoplay="" name="media" id="radioPlayer"><source src="https://node-12.zeno.fm/zq0ff06g2c9uv?rj-ttl=5&amp;rj-tok=AAABfV5gjx4Azs7jfPB1izklaA" type="audio/mpeg"></audio>
+            </div>
+        </div>
+        <img src="https://images.squarespace-cdn.com/content/v1/560dfd82e4b0a8e48bb6eb5c/1561150370263-Y210QW0V42XWY2UQSI95/beatbox.gif?format=300w" alt="" class="danceAlien">
+    </main>
+    <footer>
+        <p><strong>AlienDoubT&reg;</strong> - Todos os direitos reservados</p>
+    </footer>
+    <script>
+        function clicou() {
+            let radioPlayer = document.getElementById('radioPlayer')
+            radioPlayer.play()
+        }
+    </script>
+</body>
+</html>
